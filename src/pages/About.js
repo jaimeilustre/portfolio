@@ -2,7 +2,6 @@ import FsLightbox from "fslightbox-react";
 import React, { Suspense, useEffect, useState } from "react";
 import * as Icon from "react-feather";
 import { Helmet } from "react-helmet";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Slider from "react-slick";
 import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
@@ -10,6 +9,7 @@ import Service from "../components/Service";
 import Spinner from "../components/Spinner";
 import Testimonial from "../components/Testimonial";
 import axios from "axios";
+import ProgressiveImage from "react-progressive-graceful-image";
 
 function About() {
   const [toggler, setToggler] = useState(false);
@@ -71,7 +71,7 @@ function About() {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="mi-about-image">
-                  <LazyLoadImage
+                  <ProgressiveImage
                     src={information.aboutImage}
                     placeholder="/images/about-image-placeholder.png"
                   >
@@ -82,7 +82,7 @@ function About() {
                         onClick={() => handleToggler(!toggler)}
                       />
                     )}
-                  </LazyLoadImage>
+                  </ProgressiveImage>
                   <span className="mi-about-image-icon">
                     <Icon.ZoomIn />
                   </span>

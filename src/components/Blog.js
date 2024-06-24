@@ -1,5 +1,5 @@
 import React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import ProgressiveImage from "react-progressive-graceful-image";
 import { Link } from "react-router-dom";
 
 function Blog(props) {
@@ -18,12 +18,12 @@ function Blog(props) {
       <div className="mi-blog">
         <div className="mi-blog-image">
           <Link to={`${id}/${getNospaceTitle(filesource)}`}>
-            <LazyLoadImage
+            <ProgressiveImage
               src={featuredImage}
               placeholder="/images/blog-image-placeholder.png"
             >
               {(src) => <img src={src} alt={title} />}
-            </LazyLoadImage>
+            </ProgressiveImage>
           </Link>
           <div className="mi-blog-date">
             <span className="date">{createDay}</span>

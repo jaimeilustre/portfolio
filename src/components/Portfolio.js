@@ -1,7 +1,7 @@
 import FsLightbox from "fslightbox-react";
 import React, { useState } from "react";
 import * as Icon from "react-feather";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import ProgressiveImage from "react-progressive-graceful-image";
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
@@ -14,12 +14,12 @@ function Portfolio(props) {
   return (
     <div className="mi-portfolio mi-portfolio-visible">
       <div className="mi-portfolio-image">
-        <LazyLoadImage
+        <ProgressiveImage
           src={imageUrl}
           placeholder="/images/portfolio-image-placeholder.png"
         >
           {src => <img src={src} alt={title} />}
-        </LazyLoadImage>
+        </ProgressiveImage>
         <ul>
           {!largeImageUrl ? null : <li>
             <button onClick={() => handleToggler(!toggler)}>

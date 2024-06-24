@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import LineIcon from "react-lineicons";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link, NavLink } from "react-router-dom";
 import axios from "axios";
+import ProgressiveImage from "react-progressive-graceful-image";
 
 function Header() {
   const [information, setInformation] = useState("");
@@ -30,12 +30,12 @@ function Header() {
       <div className="mi-header-inner">
         <div className="mi-header-image">
           <Link to="/">
-            <LazyLoadImage
+            <ProgressiveImage
               src={information.brandImage}
               placeholder="/images/about-image-placeholder.png"
             >
               {(src) => <img src={src} alt="brandimage" />}
-            </LazyLoadImage>
+            </ProgressiveImage>
           </Link>
         </div>
 
