@@ -5,7 +5,7 @@ import ProgressiveImage from "react-progressive-graceful-image";
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
-  const { title, subtitle, imageUrl, largeImageUrl, url } = props.content;
+  const { title, subtitle, imageUrl, largeImageUrl, url, stacks } = props.content;
 
   const handleToggler = (value) => {
     setToggler(value);
@@ -38,13 +38,22 @@ function Portfolio(props) {
           {title}
         </a>
       </h5>}
+
       {subtitle ? <h6>{subtitle}</h6> : null}
+      
       {!largeImageUrl ? null : <FsLightbox
         toggler={toggler}
         sources={largeImageUrl}
       />
       }
+
+      <div className="stacks">
+        <h5>{stacks.map(stack => stack).join(', ')}</h5>
+      </div>
+      
     </div>
+
+    
   );
 }
 

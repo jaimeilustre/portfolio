@@ -3,7 +3,7 @@ import Mock from "../mock";
 const database = {
   information: {
     name: 'Jaime Joaquin Gonzales Ilustre',
-    aboutContent: "I am a former analyst turned web developer. After studying finance and becoming a business analyst, I have decided to embark on a new path as I grew a fond interest in the tech industry. I attended a rigorous bootcamp that allowed me to learn the fundamentals of becoming a web developer and with that bootcamp now finished, I am ready to showcase my skills but also am open to learning new programming languages along the way.",
+    aboutContent: "I am a former business analyst turned web developer. After studying finance and becoming a business analyst, I have decided to embark on a new path as I grew a fond interest in the tech industry. I attended a rigorous bootcamp that allowed me to learn the fundamentals of becoming a web developer and with that bootcamp now finished, I am ready to showcase my skills but also am open to learning new programming languages along the way.",
     age: 26,
     phone: '+31643707594',
     nationality: 'Filipino',
@@ -20,10 +20,10 @@ const database = {
       dribbble: '',
       github: 'https://github.com/jaimeilustre'
     },
-    brandImage: '/images/brand-image.jpg',
+    brandImage: '/images/personal-img.jpeg',
     aboutImage: '/images/about-image.jpg',
     aboutImageLg: '/images/about-image-lg.jpg',
-    cvfile: '/files/empty.pdf'
+    cvfile: '/files/CV.pdf'
   },
   services: [
     {
@@ -70,220 +70,96 @@ const database = {
   ],
   skills: [
     {
-      title: "HTML5",
-      value: 95
+      title: "JavaScript",
     },
     {
-      title: "CSS3",
-      value: 90
+      title: "HTML",
     },
     {
-      title: "Javascript",
-      value: 70
-    },
-    {
-      title: "jQuery",
-      value: 85
+      title: "CSS",
     },
     {
       title: "ReactJS",
-      value: 80
     },
     {
-      title: "Photoshop",
-      value: 65
-    }
+      title: "NodeJS",
+    },
+    {
+      title: "Express",
+    },
+    {
+      title: "TypeScript",
+    },
+    {
+      title: "Bootstrap",
+    },
+    {
+      title: "Tailwind",
+    },
+    {
+      title: "Sass",
+    },
+    {
+      title: "MongoDB",
+    },
+    {
+      title: "SQL",
+    },
+    {
+      title: "REST APIs",
+    },
+    {
+      title: "Token-Based Authentication",
+    },
+    {
+      title: "Git",
+    },
+    {
+      title: "Github",
+    },
+    {
+      title: "Pair Programming",
+    },
+    {
+      title: "Agile Methodology",
+    },
   ],
   portfolios: [
     {
       id: 1,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
+      title: "RingAShow",
+      subtitle: "A single-page application that allows you to book artists for small gigs at home or at a specified location. The app is easy to use and works similar to a food delivery app. Just browse through our list of artists and their performances and book your favourite artist.",
+      imageUrl: "/images/portfolio-img-1.png",
+      largeImageUrl: ["/images/portfolio-img-1.png"],
+      url: 'https://ring-a-show.netlify.app/',
+      stacks: ["ReactJS", "NodeJS", "Express", "CSS", "MongoDB", "REST API", "Token-Based Authentication"],
     },
     {
       id: 2,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg"
-      ],
-      url: 'https://facebook.com'
+      title: "ESG Tracker",
+      subtitle: "A single-page application for investors, regulators, and individuals to explore companies' ESG and other relevant data. From their perspective, they can see important information such as ESG scores, the country they are located in, the industry they are active in and their market capitalization.",
+      imageUrl: "/images/portfolio-img-2.png",
+      largeImageUrl: ["/images/portfolio-img-2.png"],
+      url: 'https://esg-tracker.netlify.app/',
+      stacks: ["ReactJS", "CSS", "MongoDB", "REST API"],
     },
     {
       id: 3,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: 'https://pinterest.com'
-    },
-    {
-      id: 4,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
-    },
-    {
-      id: 5,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
-    },
-    {
-      id: 6,
-      title: "Pendrive",
-      subtitle: "Free pendrive mockup design.",
-      imageUrl: "/images/portfolio-image-6.jpg",
-      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"]
-    },
-    {
-      id: 7,
-      title: "Beautiful Pendrive",
-      subtitle: "Pendrive with great design & flexible.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 8,
-      title: "Sticker",
-      subtitle: "Clip sticker mockup design.",
-      imageUrl: "/images/portfolio-image-8.jpg",
-      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"]
-    },
-    {
-      id: 9,
-      title: "Packet",
-      subtitle: "Beautiful packet & product design.",
-      imageUrl: "/images/portfolio-image-9.jpg",
-      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"]
-    },
-    {
-      id: 10,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
-    },
-    {
-      id: 11,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg"
-      ],
-      url: 'https://facebook.com'
-    },
-    {
-      id: 12,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: 'https://pinterest.com'
-    },
-    {
-      id: 13,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
-    },
-    {
-      id: 14,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
-    },
-    {
-      id: 15,
-      title: "Pendrive",
-      subtitle: "Free pendrive mockup design.",
-      imageUrl: "/images/portfolio-image-6.jpg",
-      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"]
-    },
-    {
-      id: 16,
-      title: "Beautiful Pendrive",
-      subtitle: "Pendrive with great design & flexible.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 17,
-      title: "Sticker",
-      subtitle: "Clip sticker mockup design.",
-      imageUrl: "/images/portfolio-image-8.jpg",
-      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"]
-    },
-    {
-      id: 18,
-      title: "Packet",
-      subtitle: "Beautiful packet & product design.",
-      imageUrl: "/images/portfolio-image-9.jpg",
-      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"]
-    },
-    {
-      id: 19,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
-    },
-    {
-      id: 20,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg"
-      ],
-      url: 'https://facebook.com'
-    },
-    {
-      id: 21,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: 'https://pinterest.com'
-    },
-    {
-      id: 22,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
-    },
-    {
-      id: 23,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
+      title: "Formula Revenge",
+      subtitle: "A game where a player can control the car using the arrow keys and shoot incoming obstacles with an automatic shooting system. Each obstacle destroyed garners the player 25 points.",
+      imageUrl: "/images/portfolio-img-3.png",
+      largeImageUrl: ["/images/portfolio-img-3.png"],
+      url: 'https://jaimeilustre.github.io/Project-1/',
+      stacks: ["JavaScript", "HTML", "CSS", "DOM Manipulation"],
     }
   ],
   experience: {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
-        position: "Frontend Web Developer",
-        company: "Abc Company",
+        year: "October 2022 - January 2023",
+        position: "Strategy Analyst",
+        company: "OTC FLOW",
         details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
       },
       {
@@ -463,9 +339,9 @@ const database = {
     }
   ],
   contactInfo: {
-    phoneNumbers: ['+012-3456-7891', '+012-3456-7892'],
-    emailAddress: ['admin.sitename@example.com', 'info.sitename@example.com'],
-    address: "121 King Street, Melbourne, Victoria 3000, Australia"
+    phoneNumbers: ['+31 643707594'],
+    emailAddress: ['jaimeilustre@yahoo.com'],
+    address: "Hilversum, the Netherlands"
   }
 }
 

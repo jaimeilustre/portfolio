@@ -46,7 +46,7 @@ function Resumes() {
                     className="col-lg-6 mt-30"
                     key={skill.title}
                   >
-                    <Progress title={skill.title} percentage={skill.value} />
+                    <Progress title={skill.title} />
                   </TrackVisibility>
                 ))}
               </div>

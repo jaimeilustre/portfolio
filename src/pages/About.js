@@ -70,7 +70,7 @@ function About() {
             <Sectiontitle title="About Me" />
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <div className="mi-about-image">
+                {/* <div className="mi-about-image">
                   <ProgressiveImage
                     src={information.aboutImage}
                     placeholder="/images/about-image-placeholder.png"
@@ -90,7 +90,7 @@ function About() {
                     toggler={toggler}
                     sources={[information.aboutImageLg]}
                   />
-                </div>
+                </div> */}
               </div>
               <div className="col-lg-6">
                 <div className="mi-about-content">
@@ -98,9 +98,7 @@ function About() {
                     I am <span className="color-theme">{information.name}</span>
                   </h3>
                   <p>
-                    I am a frontend web developer. I can provide clean code and
-                    pixel perfect design. I also make website more & more
-                    interactive with web animations.
+                    {information.aboutContent}
                   </p>
                   <ul>
                     {!information.name ? null : (
@@ -169,7 +167,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
+        {/* <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
           <div className="container">
             <Sectiontitle title="Reviews" />
             <div className="row justify-content-center">
@@ -182,7 +180,7 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </Suspense>
     </Layout>
   );
