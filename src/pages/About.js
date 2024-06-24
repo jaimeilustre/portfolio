@@ -1,4 +1,3 @@
-import axios from "axios";
 import FsLightbox from "fslightbox-react";
 import React, { Suspense, useEffect, useState } from "react";
 import * as Icon from "react-feather";
@@ -10,6 +9,7 @@ import Sectiontitle from "../components/Sectiontitle";
 import Service from "../components/Service";
 import Spinner from "../components/Spinner";
 import Testimonial from "../components/Testimonial";
+import axios from "axios";
 
 function About() {
   const [toggler, setToggler] = useState(false);

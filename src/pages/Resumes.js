@@ -1,4 +1,4 @@
-import axios from "axios";
+
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import TrackVisibility from "react-on-screen";
@@ -8,6 +8,7 @@ import Resume from "../components/Resume";
 import Sectiontitle from "../components/Sectiontitle";
 import Smalltitle from "../components/Smalltitle";
 import Spinner from "../components/Spinner";
+import axios from "axios";
 
 function Resumes() {
   const [skills, setSkills] = useState([]);

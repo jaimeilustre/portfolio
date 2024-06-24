@@ -1,10 +1,11 @@
-import axios from "axios";
+
 import React, { Suspense, useEffect, useState } from "react";
 import * as Icon from "react-feather";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
 import Spinner from "../components/Spinner";
+import axios from "axios";
 
 function Contact() {
   const [phoneNumbers, setPhoneNumbers] = useState([]);

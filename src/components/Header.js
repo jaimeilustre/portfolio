@@ -1,8 +1,8 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import LineIcon from "react-lineicons";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link, NavLink } from "react-router-dom";
+import axios from "axios";
 
 function Header() {
   const [information, setInformation] = useState("");

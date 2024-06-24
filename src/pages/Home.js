@@ -1,10 +1,11 @@
-import axios from "axios";
+
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Particle from "../components/Particle";
 import Socialicons from "../components/Socialicons";
 import Spinner from "../components/Spinner";
+import axios from "axios";
 
 function Home({ lightMode }) {
   const [information, setInformation] = useState("");

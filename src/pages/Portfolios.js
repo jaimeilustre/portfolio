@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
@@ -6,6 +5,7 @@ import Pagination from "../components/Pagination";
 import PortfoliosView from "../components/PortfoliosView";
 import Sectiontitle from "../components/Sectiontitle";
 import Spinner from "../components/Spinner";
+import axios from "axios";
 
 function Portfolios() {
   const [portfolios, setPortfoios] = useState([]);
