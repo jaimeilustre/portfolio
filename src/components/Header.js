@@ -60,11 +60,11 @@ function Header() {
               <span>Portfolios</span>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/blogs">
               <span>Blogs</span>
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/contact">
               <span>Contact</span>
