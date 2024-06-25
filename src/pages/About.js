@@ -12,7 +12,7 @@ import axios from "axios";
 
 
 function About() {
-  const [toggler, setToggler] = useState(false);
+  
   const [information, setInformation] = useState("");
 
   useEffect(() => {
