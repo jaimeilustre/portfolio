@@ -14,34 +14,6 @@ import axios from "axios";
 function About() {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState("");
-  const [services, setServices] = useState([]);
-  const [reviews, setReviews] = useState([]);
-
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    arrows: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    pauseOnHover: true,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
-  const handleToggler = (event) => {
-    setToggler(!toggler);
-  };
 
   useEffect(() => {
     axios.get("/api/information").then((response) => {
