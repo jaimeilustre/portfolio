@@ -2,8 +2,12 @@ import Mock from "../mock";
 
 const database = {
   information: {
-    name: 'Jaime Joaquin Gonzales Ilustre',
+    name: 'Jaime',
+    fullName: 'Jaime Joaquin Gonzales Ilustre',
     aboutContent: "I am a former business analyst turned web developer. After studying finance and becoming a business analyst, I have decided to embark on a new path as I grew a fond interest in the tech industry. I attended a rigorous bootcamp that allowed me to learn the fundamentals of becoming a web developer and with that bootcamp now finished, I am ready to showcase my skills but also am open to learning new programming languages along the way.",
+    detailedContent1: "With the bootcamp, I built a strong foundation in web development, specifically the MERN stack, HTML, CSS, and Vanilla JavaScript. I have completed various projects and assignments to showcase my skills on GitHub and LinkedIn. I have also gained knowledge in essential programming workflows, such as GitHub, pair-programming, and agile methodologies. Since the bootcamp, I have expanded my skills to include TypeScript and SQL, and I am actively pursuing further learning in new technologies.",
+    detailedContent2: "Prior to transitioning into tech, I worked as a business analyst in the environmental commodities market, focusing on biofuels. This role honed my analytical, project management, and problem-solving skills. I independently developed business cases and market insights, and my experience in a startup enhanced my communication skills through collaboration with the sales team.",
+    detailedContent3: "With my business acumen and technical expertise, I am excited to collaborate closely with your team to deliver impactful solutions. I am ready to leverage my current knowledge of full stack technologies, while at the same time learning new technologies along the way. I am confident that my unique blend of business background and programming skills will make me an effective contributor to your team.",
     age: 26,
     phone: '+31643707594',
     nationality: 'Filipino',
@@ -69,60 +73,32 @@ const database = {
     }
   ],
   skills: [
-    {
-      title: "JavaScript",
-    },
-    {
-      title: "HTML",
-    },
-    {
-      title: "CSS",
-    },
-    {
-      title: "ReactJS",
-    },
-    {
-      title: "NodeJS",
-    },
-    {
-      title: "Express",
-    },
-    {
-      title: "TypeScript",
-    },
-    {
-      title: "Bootstrap",
-    },
-    {
-      title: "Tailwind",
-    },
-    {
-      title: "Sass",
-    },
-    {
-      title: "MongoDB",
-    },
-    {
-      title: "SQL",
-    },
-    {
-      title: "REST APIs",
-    },
-    {
-      title: "Token-Based Authentication",
-    },
-    {
-      title: "Git",
-    },
-    {
-      title: "Github",
-    },
-    {
-      title: "Pair Programming",
-    },
-    {
-      title: "Agile Methodology",
-    },
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "ReactJS",
+    "NodeJS",
+    "Express",
+    "TypeScript",
+    "Bootstrap",
+    "Tailwind",
+    "Sass",
+    "MongoDB",
+    "SQL",
+    "REST APIs",
+    "Token-Based Authentication",
+    "Git",
+    "Github",
+    "Pair Programming",
+    "Agile Methodology",
+    "Analytical",
+    "Teamwork",
+    "Interpersonal and Communication Skills",
+    "Problem-solver",
+    "Detail-oriented",
+    "Project Management",
+    "Dynamic",
+    "Willingness to Learn"
   ],
   portfolios: [
     {
@@ -160,44 +136,58 @@ const database = {
         year: "October 2022 - January 2023",
         position: "Strategy Analyst",
         company: "OTC FLOW",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        details: "I developed insights into the European biofuel market, focusing on physical end products, feedstocks, and biofuel certificates/tickets, and shared updates on regulatory and market trends with the sales team. I created business cases for entering new markets, specifically in Portugal and Ireland, and monitored the biofuel markets in the Netherlands, UK, Portugal, and Ireland, as well as the European Compulsory Stock Obligations (CSO) market. Additionally, I assisted in onboarding new colleagues with a general introduction to the biofuel market, gathered information from governing authorities, and provided daily support to management."
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "October 2018 - September 2020",
+        position: "Brand Representative",
+        company: "Hollister & Co.",
+        details: "In my part-time, customer-oriented role, I helped customers with their shopping needs and assisted them in any way possible. I regularly maintained clothing presentations throughout the store and assisted the stock room team with handling incoming shipments and organizing the inventory."
       },
       {
         id: 3,
-        year: "2014 - 1016",
-        position: "UI/UX Designer",
-        company: "Example Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "August 2018 - February 2020",
+        position: "Student Representative",
+        company: "Maastricht University School of Business and Economics",
+        details: "I assisted in university-hosted events, such as open days and introduction days. During open days, I represented my bachelor program to potential new students and their parents. On introduction days, I guided groups of new students around the university campus and the city of Maastricht, introduced them to the university's learning practices, and answered their general questions about the university."
+      },
+      {
+        id: 3,
+        year: "August 2016 - August 2017",
+        position: "Brand Representative",
+        company: "Abercrombie & Fitch Co.",
+        details: "In my part-time, customer-oriented role, I helped customers with their shopping needs and assisted them in any way possible. I regularly maintained clothing presentations throughout the store and assisted the stock room team with handling incoming shipments and organizing the inventory."
       }
     ],
     educationExperience: [
       {
         id: 1,
-        year: "2018 - 2019",
-        graduation: "Master of Science",
-        university: "Abc University",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "October 2023 - December 2023",
+        graduation: "Web Development Bootcamp",
+        university: "Ironhack",
+        details: "I completed a 10-week, full-time (400+ hours) bootcamp covering the fundamentals of web development, divided into three modules. In Module 1, I learned HTML, CSS, and JavaScript, culminating in a final project to create a game using object-oriented programming (OOP). Module 2 focused on React and APIs, with a final project to create a Single Page Application using React.js and an API. Module 3 covered the MERN Stack, REST APIs, and token-based authentication, concluding with a final project to create a full-stack application using the MERN Stack."
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        graduation: "Bachelor of Science",
-        university: "Abc University",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "September 2021 - August 2022",
+        graduation: "M.Sc. Sustainable Finance",
+        university: "Maastricht University School of Business and Economics",
+        details: "I completed a one-year program focused on the fields of Data Analytics, Sustainable Finance, Management and Strategy, Institutional Investors, Financial Statement Analysis and Valuation, Sustainable and Responsible Investments, and Real Estate Finance."
       },
       {
         id: 3,
-        year: "2015 - 2016",
-        graduation: "Higher Schoold Graduation",
-        university: "Abc College",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "September 2017 - July 2020",
+        graduation: "B.Sc. Economics and Business Economics",
+        university: "Maastricht University School of Business and Economics",
+        details: "I completed a three-year bachelor's program, taking courses in Marketing, Supply Chain, Accounting, Finance, Banking, International Business Strategy, Project Management, Process Management, and Technology and Innovation Management."
+      },
+      {
+        id: 4,
+        year: "September 2019 - December 2019",
+        graduation: "Exchange Program",
+        university: "Smith School of Business at Queen's University",
+        details: "During my bachelor, I completed a four-month exchange program in Canada where I completed courses including COMM 343 Strategic Service Operations, COMM 353 Managing Across Cultures, COMM 357 Interpersonal Skills for Managers, COMM 410 Strategies for Social Enterprise, and COMM 416 Organisational Fraud."
       }
     ]
   },

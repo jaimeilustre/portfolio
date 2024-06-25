@@ -47,8 +47,12 @@ function Portfolio(props) {
       />
       }
 
-      <div className="stacks">
-        <h5>{stacks.map(stack => stack).join(', ')}</h5>
+      <div className="stacks-container">
+        {stacks.map((stack) => (
+          <div className="stacks">
+            <h6>{stack}</h6>
+          </div>
+        ))}
       </div>
       
     </div>

@@ -94,29 +94,35 @@ function About() {
               </div>
               <div className="col-lg-6">
                 <div className="mi-about-content">
-                  <h3>
+                  {/* <h3>
                     I am <span className="color-theme">{information.name}</span>
-                  </h3>
+                  </h3> */}
                   <p>
-                    {information.aboutContent}
+                    {information.detailedContent1}
+                  </p>
+                  <p>
+                    {information.detailedContent2}
+                  </p>
+                  <p>
+                    {information.detailedContent3}
                   </p>
                   <ul>
-                    {!information.name ? null : (
+                    {!information.fullName ? null : (
                       <li>
-                        <b>Full Name</b> {information.name}
+                        <b>Full Name</b> {information.fullName}
                       </li>
                     )}
-                    {!information.age ? null : (
+                    {/* {!information.age ? null : (
                       <li>
                         <b>Age</b> {information.age} Years
                       </li>
-                    )}
+                    )} */}
                     {!information.phone ? null : (
                       <li>
                         <b>Phone</b> {information.phone}
                       </li>
                     )}
-                    {!information.nationality ? null : (
+                    {/* {!information.nationality ? null : (
                       <li>
                         <b>Nationality</b> {information.nationality}
                       </li>
@@ -125,7 +131,7 @@ function About() {
                       <li>
                         <b>Languages</b> {information.language}
                       </li>
-                    )}
+                    )} */}
                     {!information.email ? null : (
                       <li>
                         <b>Email</b> {information.email}
@@ -136,11 +142,11 @@ function About() {
                         <b>Address</b> {information.address}
                       </li>
                     )}
-                    {!information.freelanceStatus ? null : (
+                    {/* {!information.freelanceStatus ? null : (
                       <li>
                         <b>Freelance</b> {information.freelanceStatus}
                       </li>
-                    )}
+                    )} */}
                   </ul>
                   <a href={information.cvfile} className="mi-button">
                     Download CV
@@ -150,7 +156,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="mi-service-area mi-section mi-padding-top">
+        {/* <div className="mi-service-area mi-section mi-padding-top">
           <div className="container">
             <Sectiontitle title="Services" />
             <div className="mi-service-wrapper">
@@ -166,7 +172,7 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
           <div className="container">
             <Sectiontitle title="Reviews" />

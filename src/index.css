@@ -12,4 +12,31 @@ code {
     monospace;
 }
 
+.skills {
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  padding: 8px 12px; 
+  margin-right: 10px; 
+  margin-bottom: 10px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stacks {
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  padding: 2px 12px; 
+  margin-right: 10px; 
+  margin-bottom: 10px;
+}
+
+.stacks-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
 

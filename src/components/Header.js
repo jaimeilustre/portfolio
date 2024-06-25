@@ -3,6 +3,8 @@ import LineIcon from "react-lineicons";
 import { Link, NavLink } from "react-router-dom";
 import axios from "axios";
 import ProgressiveImage from "react-progressive-graceful-image";
+import Socialicons from "../components/Socialicons";
+
 
 function Header() {
   const [information, setInformation] = useState("");
@@ -37,8 +39,8 @@ function Header() {
               {(src) => <img src={src} alt="brandimage" />}
             </ProgressiveImage>
           </Link>
+          <h3>{information.fullName}</h3>
         </div>
-
         <ul className="mi-header-menu">
           <li>
             <NavLink to="/" end>
@@ -72,7 +74,7 @@ function Header() {
           </li>
         </ul>
         <p className="mi-header-copyright">
-          &copy; {new Date().getFullYear()}{" "}
+          {/* &copy; {new Date().getFullYear()}{" "}
           <b>
             <a
               rel="noopener noreferrer"
@@ -81,7 +83,8 @@ function Header() {
             >
               NuclearThemes
             </a>
-          </b>
+          </b> */}
+            <Socialicons bordered />
         </p>
       </div>
     </nav>
