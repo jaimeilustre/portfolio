@@ -19,12 +19,6 @@ function About() {
     axios.get("/api/information").then((response) => {
       setInformation(response.data);
     });
-    axios.get("/api/services").then((response) => {
-      setServices(response.data);
-    });
-    axios.get("/api/reviews").then((response) => {
-      setReviews(response.data);
-    });
   }, []);
 
   return (
