@@ -1,15 +1,15 @@
-import FsLightbox from "fslightbox-react";
+
 import React, { Suspense, useEffect, useState } from "react";
-import * as Icon from "react-feather";
+
 import { Helmet } from "react-helmet";
-import Slider from "react-slick";
+
 import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
-import Service from "../components/Service";
+
 import Spinner from "../components/Spinner";
-import Testimonial from "../components/Testimonial";
+
 import axios from "axios";
-import ProgressiveImage from "react-progressive-graceful-image";
+
 
 function About() {
   const [toggler, setToggler] = useState(false);
