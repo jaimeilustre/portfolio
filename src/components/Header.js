@@ -52,11 +52,11 @@ function Header() {
               <span>About</span>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/resume">
               <span>Resume</span>
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/portfolios">
               <span>Portfolio</span>
